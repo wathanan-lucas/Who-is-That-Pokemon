@@ -46,11 +46,49 @@ main {
     background-color: #333333;
 }
 
-.title h1 {
+.top-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.top-main h1 {
     text-align: center;
     margin-top: 15px;
 
+    font-size: 25px;
+
     color: #a78b36;
+}
+
+.life h3, .score p {
+    color: #cdd3db;
+} 
+
+.life {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.life img {
+    width: 40px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score h3 {
+    color: #cdd3db;
 }
 
 .container-card {
@@ -208,5 +246,9 @@ input {
     .nav.active .hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    .top-main {
+        margin-top: 0px;
     }
 }
